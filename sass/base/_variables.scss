@@ -1,0 +1,51 @@
+/* color palette */
+/* main background #ffffff */
+/* footer background #2F303A */
+/* title text  #212121 */
+/* primary text  #757575 */
+/* accent  #2196F3 */
+/* footer text #ffffff */
+// colors
+$main-bg-color:#ffffff;
+$secondary-bg-color:#F5F4FA;
+$primary-text-color:#757575;
+$title-text-color:#212121;
+$accent-color:#2196F3;
+$logo-dark-color:#000000;
+$logo-light-color:$main-bg-color;
+$logo-accent-color:$accent-color;
+
+
+// fonts
+$font-family-main: 'Roboto', sans-serif;
+$font-family-logo: 'Raleway', sans-serif;
+$font-size-main: 14px;
+$font-size-max: 44px;
+$font-size-title: 36px;
+$letter-spacing-main: 0.033em;
+$letter-spacing-small: 0.02em;
+$letter-spacing-big: 0.06em;
+
+// geometry
+$container-size: 1200px;
+$container-padding:15px;
+$section-vertical-padding:94px;
+
+// animation
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-time-main: 250ms;
+
+// borders
+$border-radius-main:4px;
+$border-radius-middle:2px;
+$border-radius-small:1px;
+
+
+// button
+$button-color-main:$accent-color;
+$button-color-hover:$main-bg-color;
+$button-text-color-main:$main-bg-color;
+$button-text-color-hover:$accent-color;
+$button-width-main:200px;
+$button-height-main:50px;
+

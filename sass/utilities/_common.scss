@@ -1,0 +1,60 @@
+body {
+    color: $primary-text-color;
+    background-color: $main-bg-color;
+    font-family: $font-family-main;
+    letter-spacing: $letter-spacing-main;
+    font-size: $font-size-main;
+}
+.container {
+    max-width: $container-size;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: $section-vertical-padding;
+    padding-bottom: $section-vertical-padding;
+
+}
+.section--no-top-padding {
+    padding-top: 0;
+}
+.section__title {
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: $font-size-title;
+    line-height: 1.16;
+ 
+    // @include line-height($font-size-title, 42);
+    color: $title-text-color;
+}
+
+.button {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: $letter-spacing-big;
+    color:$main-bg-color;
+    background-color: $accent-color;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    height: 50px;
+    width: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius-main;
+
+    transition: color $transition-time-main $cubic-bezier, background-color $transition-time-main $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        @include inverse($main-bg-color, $accent-color);
+    }
+}
