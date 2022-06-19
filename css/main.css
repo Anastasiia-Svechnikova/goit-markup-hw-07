@@ -238,7 +238,7 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
-.button--basic {
+.button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -246,18 +246,18 @@ button {
     color: #FFFFFF;
     background-color: var(--accent-color);
 
-    min-width: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    padding-right: 32px;
+    height: 50px;
+    width: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button--basic:focus,
-.button--basic:hover {
+.button:focus,
+.button:hover {
     color: var(--accent-color);
     background-color: #FFFFFF;
 }
@@ -591,14 +591,7 @@ button {
 .subscription-form__input:focus{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.subscription-button {
-    max-width: 200px;
-    height: 50px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .subscription__icon{
     margin-left: 10px;
     --color2:currentColor;
@@ -751,7 +744,7 @@ button {
     resize: none;
     margin-bottom: 20px;
 }
-.client-form__agreement-label{
+.agreement__label{
     display: flex;
     align-items: center;
 
@@ -761,7 +754,7 @@ button {
     line-height: 1.71;
     cursor: pointer;
 }
-.client-form__agreement-check {
+.agreement__check {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -775,11 +768,11 @@ button {
     overflow: hidden;
 }
 
-.client-form__agreement-check:checked ~ .client-form__agreement-icon {
+.agreement__check:checked ~ .agreement__icon {
     fill:var(--accent-color);
     border:none;
 }
-.client-form__agreement-icon{
+.agreement__icon{
     
     height: 15px;
     width: 16px;
@@ -792,10 +785,10 @@ button {
             border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-form__agreement-text{
+.agreement__text{
     margin-left: 7px;
 }
-.client-form__agreement-link{
+.agreement__link{
     color: var(--accent-color);
     text-decoration: underline;
 }
