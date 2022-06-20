@@ -350,21 +350,24 @@ body {
   margin-left: 30px;
 }
 
-.team_card__photo {
+.team-card__photo {
   display: block;
   width: 100%;
 }
-.team_card__info {
+
+.team-card__info {
   padding: 30px 0;
 }
-.team_card__name {
+
+.team-card__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: #212121;
   margin-bottom: 10px;
 }
-.team_card__pos {
+
+.team-card__pos {
   font-size: 16px;
   line-height: 1.19;
 }

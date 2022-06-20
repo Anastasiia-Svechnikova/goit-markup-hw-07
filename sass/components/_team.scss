@@ -22,25 +22,24 @@
 		}
 	}
 }
-.team_card {
-	&__photo {
-		display: block;
+.team-card__photo {
+	display: block;
 
-		width: 100%;
-	}
-	&__info {
-		padding: 30px 0;
-	}
-	&__name {
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 1.19;
-		color: $title-text-color;
+	width: 100%;
+}
 
-		margin-bottom: 10px;
-	}
-	&__pos {
-		font-size: 16px;
-		line-height: 1.19;
-	}
+.team-card__info {
+	padding: 30px 0;
+}
+.team-card__name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	color: $title-text-color;
+
+	margin-bottom: 10px;
+}
+.team-card__pos {
+	font-size: 16px;
+	line-height: 1.19;
 }
