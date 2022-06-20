@@ -21,6 +21,7 @@
 }
 .addres-list__link--white {
     color: $main-bg-color;
+    @include transition-single(color);
     &:hover,
     &:focus {
         color: $accent-color;
@@ -60,7 +61,7 @@
 .social-list__icon-light {
     --color4: #ffffff;
 }
-.footer .social-link:hover,
-.footer .social-link:focus {
-    background-color: var(--accent-color);
+.social-list__link:hover,
+.social-list__link:focus {
+    background-color: $accent-color;
 }

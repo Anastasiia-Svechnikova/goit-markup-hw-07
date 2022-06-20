@@ -190,7 +190,7 @@ li {
 
 }
 
-.header__link:hover, .header__link:focus {
+.header__link:hover,.header__link:focus {
     color: var(--accent-color);
 
 }

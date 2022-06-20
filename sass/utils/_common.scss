@@ -50,6 +50,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: $border-radius-main;
+    outline-color: $accent-color;
 
     @include transition-double(color, background-color);
 

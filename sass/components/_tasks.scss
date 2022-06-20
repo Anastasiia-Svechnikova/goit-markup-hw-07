@@ -1,40 +1,39 @@
 .tasks-grid {
-    display: flex;
-}
-.tasks-grid__item {
-    @include grid-item-max-width(60px, 3);
-    // flex-basis: calc((100% - 60px) / 3);
+	display: flex;
 
-    &:not(:last-child){
-        margin-right: 30px;
-    }
-}
+	&__item {
+		@include grid-item-max-width(60px, 3);
+		// flex-basis: calc((100% - 60px) / 3);
 
-.tasks-grid__thumb {
-    position: relative;
-}
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
 
-.tasks-grid__overlay {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
+	&__thumb {
+		position: relative;
+	}
 
-    align-items: center;
-    justify-content: center;
-    
-    background-color: rgba(47, 48, 58, 0.8);
-    color: rgba(255, 255, 255, 1);
-    font-size: $font-size-main;
-    line-height: 1.17;
-    text-transform: uppercase;
-    font-weight: 700;
+	&__overlay {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		height: 70px;
+		width: 100%;
 
-}
+		align-items: center;
+		justify-content: center;
 
-.tasks-grid__image {
-    display: block;
-    width: 100%;
+		background-color: rgba(47, 48, 58, 0.8);
+		color: rgba(255, 255, 255, 1);
+		font-size: $font-size-main;
+		line-height: 1.17;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
 
+	&__image {
+		display: block;
+		width: 100%;
+	}
 }
