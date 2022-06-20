@@ -19,3 +19,9 @@
     color:$bg-color;
     background-color: $color;
 }
+@mixin grid-item-width ($total-margin, $column-num) {
+    width: calc((100% - $total-margin) / $column-num);
+}
+@mixin grid-item-max-width ($total-margin, $column-num) {
+    max-width: calc((100% - $total-margin) / $column-num);
+}

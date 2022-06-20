@@ -9,6 +9,7 @@
 }
 
 .team-list__item {
+    // @include grid-item-width (90px, 4);
     max-width: calc((100% - 90px) / 4);
     background-color: $main-bg-color;
     border-radius: $border-radius-small;

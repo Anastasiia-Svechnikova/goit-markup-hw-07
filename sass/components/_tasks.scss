@@ -2,7 +2,8 @@
     display: flex;
 }
 .tasks-grid__item {
-    flex-basis: calc((100% - 60px) / 3);
+    @include grid-item-max-width(60px, 3);
+    // flex-basis: calc((100% - 60px) / 3);
 
     &:not(:last-child){
         margin-right: 30px;

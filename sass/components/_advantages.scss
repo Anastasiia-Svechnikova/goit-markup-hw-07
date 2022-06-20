@@ -2,7 +2,8 @@
     display: flex;
 }
 .advantages-list__item {
-    max-width: calc((100% - 90px) / 4);
+    @include grid-item-max-width(90px, 4);
+    // max-width: calc((100% - 90px) / 4);
 
     &:not(:last-child) {
     margin-right: 30px;
