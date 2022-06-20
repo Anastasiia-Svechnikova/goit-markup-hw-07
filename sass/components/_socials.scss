@@ -17,7 +17,8 @@
     height: 44px;
     max-width: 44px;
 
-    transition: color $transition-time-main $cubic-bezier, background-color $transition-time-main $cubic-bezier;
+    @include transition-double(color, background-color);
+    // transition: color $transition-time-main $cubic-bezier, background-color $transition-time-main $cubic-bezier;
 
     display: flex;
     justify-content: center;

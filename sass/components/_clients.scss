@@ -22,7 +22,8 @@
     color: #AFB1B8;
     border-radius: $border-radius-main;
     --color1: currentColor;
-    transition: color $transition-time-main $cubic-bezier;
+    @include transition-single(color);
+    // transition: color $transition-time-main $cubic-bezier;
 
     &:hover,
     &:focus {

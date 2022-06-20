@@ -32,7 +32,8 @@
     color: $title-text-color;
     --color1: currentColor;
 
-    transition: color $transition-time-main $cubic-bezier;
+    @include transition-single(color);
+    // transition: color $transition-time-main $cubic-bezier;
     &--current{
         color: $accent-color;
     }
@@ -52,7 +53,8 @@
         display: flex;
         color: $primary-text-color;
         
-        transition: color $transition-time-main $cubic-bezier;
+        @include transition-single(color);
+        // transition: color $transition-time-main $cubic-bezier;
         
     }
     &:hover,
